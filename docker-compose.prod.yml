@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   web:
-    image: pionwebrtc/ion-app-web:latest
+    image: zeethio/ion-app-web:latest
     build: .
     volumes:
       # prod caddy file
@@ -16,8 +16,8 @@ services:
       - ionnet
     environment:
       # must set, used by caddy to download free certificate
-      - WWW_URL=yourdomain
-      - ADMIN_EMAIL=youremail
+      - WWW_URL=cosmiccity.zeeth.io
+      - ADMIN_EMAIL=support@zeeth.io
 
 volumes:
   caddy:
